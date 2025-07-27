@@ -23,8 +23,8 @@ import { SwitchScrollModeMenuItem } from './SwitchScrollModeMenuItem';
 import { SwitchViewMode, SwitchViewModeProps } from './SwitchViewMode';
 import { SwitchViewModeButton } from './SwitchViewModeButton';
 import { SwitchViewModeMenuItem } from './SwitchViewModeMenuItem';
-import { switchScrollMode } from './switchScrollMode';
-import { switchViewMode } from './switchViewMode';
+import { switchScrollMode } from './switchScrollModeScript';
+import { switchViewMode } from './switchViewModeScript';
 import { type StoreProps } from './types/StoreProps';
 
 export interface SwitchScrollModeButtonProps {
