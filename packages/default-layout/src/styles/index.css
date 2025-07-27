@@ -6,7 +6,8 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-@import '../../../default-layout/lib/styles/default-layout.css';
+@import './defaultLayout.module.css';
+@import './sidebar.module.css';
 
 /* Include other plugins */
 @import '../../../attachment/lib/styles/index.css';

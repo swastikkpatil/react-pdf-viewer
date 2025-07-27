@@ -6,7 +6,7 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-@import '../../../toolbar/lib/styles/toolbar.css';
+@import './defaultToolbar.module.css';
 
 /* Include other plugins */
 @import '../../../full-screen/lib/styles/index.css';

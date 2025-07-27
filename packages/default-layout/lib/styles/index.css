@@ -14,94 +14,7 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-.rpv_a85ddeb {
-    display: flex;
-    border-color: hsl(var(--rpv-border));
-}
-
-.rpv_306d3634 {
-    border-color: transparent;
-    /* Absolute position */
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-
-    /* Size */
-    width: 12rem;
-
-    /* Display it on top of pages */
-    z-index: 1;
-}
-
-.rpv_903d01ff {
-    border-right-width: 1px;
-    border-right-style: solid;
-}
-
-.rpv_903d187f {
-    border-left-width: 1px;
-    border-left-style: solid;
-}
-
-@media (min-width: 768px) {
-    .rpv_306d3634 {
-        width: 16rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .rpv_306d3634 {
-        background: inherit;
-        position: inherit;
-        width: 20rem;
-        z-index: inherit;
-    }
-}
-
-.rpv_86f3034f {
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.rpv_bda34215 {
-    background-color: hsl(var(--rpv-muted) / 0.4);
-    padding: 0.25rem;
-}
-
-.rpv_81fd021e {
-    padding: 0.125rem;
-}
-
-.rpv_c6f30708 {
-    display: none;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-.rpv_4ac5591 {
-    display: flex;
-    overflow: hidden;
-}
-
-.rpv_f36067c2 {
-    border-left: 1px solid hsl(var(--rpv-border));
-}
-
-.rpv_f3607e42 {
-    border-right: 1px solid hsl(var(--rpv-border));
-}
-
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
-.rpv_d51a35ff {
+.container {
     /* Border */
     border: 1px solid hsl(var(--rpv-border));
     box-sizing: border-box;
@@ -111,7 +24,7 @@
     width: 100%;
 }
 
-.rpv_36f1a57b {
+.main {
     display: flex;
     padding-top: 2.5rem;
 
@@ -122,16 +35,16 @@
     position: relative;
 }
 
-.rpv_e2a966ef {
+.mainRtl {
     direction: rtl;
 }
 
-.rpv_36ecd964 {
+.body {
     flex: 1;
     overflow: auto;
 }
 
-.rpv_6d2cbc79 {
+.toolbar {
     align-items: center;
     background-color: hsl(var(--rpv-muted) / 0.4);
     border-bottom: 1px solid hsl(var(--rpv-border));
@@ -149,6 +62,93 @@
 
     /* To make the tooltip displayed on top of the pages */
     z-index: 1;
+}
+
+/**
+ * A React component to view a PDF document
+ *
+ * @see https://react-pdf-viewer.dev
+ * @license https://react-pdf-viewer.dev/license
+ * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
+ */
+
+.sidebar {
+    display: flex;
+    border-color: hsl(var(--rpv-border));
+}
+
+.sidebarOpened {
+    border-color: transparent;
+    /* Absolute position */
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    /* Size */
+    width: 12rem;
+
+    /* Display it on top of pages */
+    z-index: 1;
+}
+
+.sidebarLtr {
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.sidebarRtl {
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+@media (min-width: 768px) {
+    .sidebarOpened {
+        width: 16rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sidebarOpened {
+        background: inherit;
+        position: inherit;
+        width: 20rem;
+        z-index: inherit;
+    }
+}
+
+.tabs {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.headers {
+    background-color: hsl(var(--rpv-muted) / 0.4);
+    padding: 0.25rem;
+}
+
+.header {
+    padding: 0.125rem;
+}
+
+.content {
+    display: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.contentOpened {
+    display: flex;
+    overflow: hidden;
+}
+
+.contentLtr {
+    border-left: 1px solid hsl(var(--rpv-border));
+}
+
+.contentRtl {
+    border-right: 1px solid hsl(var(--rpv-border));
 }
 
 /* Include other plugins */
@@ -557,22 +557,22 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-.rpv_fa73c6a8 {
+.toolbar {
     align-items: center;
     display: flex;
     width: 100%;
 }
 
-.rpv_66fc1aa2 {
+.toolbarRtl {
     direction: rtl;
 }
 
-.rpv_9116fbfa {
+.left {
     align-items: center;
     display: flex;
 }
 
-.rpv_97eff788 {
+.center {
     align-items: center;
     display: flex;
     flex-grow: 1;
@@ -580,19 +580,19 @@
     justify-content: center;
 }
 
-.rpv_921ee489 {
+.right {
     align-items: center;
     display: flex;
     margin-left: auto;
 }
 
-.rpv_9115d706 {
+.item {
     align-items: center;
     display: flex;
     padding: 0 0.125rem;
 }
 
-.rpv_91c6a161 {
+.label {
     color: hsl(var(--rpv-foreground));
 }
 

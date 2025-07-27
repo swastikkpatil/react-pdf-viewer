@@ -14,22 +14,22 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-.rpv_fa73c6a8 {
+.toolbar {
     align-items: center;
     display: flex;
     width: 100%;
 }
 
-.rpv_66fc1aa2 {
+.toolbarRtl {
     direction: rtl;
 }
 
-.rpv_9116fbfa {
+.left {
     align-items: center;
     display: flex;
 }
 
-.rpv_97eff788 {
+.center {
     align-items: center;
     display: flex;
     flex-grow: 1;
@@ -37,19 +37,19 @@
     justify-content: center;
 }
 
-.rpv_921ee489 {
+.right {
     align-items: center;
     display: flex;
     margin-left: auto;
 }
 
-.rpv_9115d706 {
+.item {
     align-items: center;
     display: flex;
     padding: 0 0.125rem;
 }
 
-.rpv_91c6a161 {
+.label {
     color: hsl(var(--rpv-foreground));
 }
 
